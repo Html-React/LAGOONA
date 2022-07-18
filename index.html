@@ -77,10 +77,10 @@
         <section class="specials">
           <div class="container">
             <h2 class="text-header">Спецпредложения</h2>
-            <ul class="specials-list">
-              <ul class="specials-list_one">
-                <li class="specials-item">
-                  <img src="img/Rectangle 15.png" class="specials-item-img" alt="Мальдивские острова">
+            <div class="specials-list">
+              <div class="specials-list_one">
+                <div class="specials-item">
+                  <img src="img/Rectangle15.png" class="specials-item-img" alt="Мальдивские острова">
                   <strong class="specials-item-header">
                     Мальдивские острова
                   </strong>
@@ -91,9 +91,9 @@
                     Подробнее
                     <span class="specials-link-icon"></span>
                   </a>
-                </li>
-                <li class="specials-item">
-                  <img src="img/Rectangle 15_1.png" class="specials-item-img" alt="Горящий тур на остров Крит">
+                </div>
+                <div class="specials-item">
+                  <img src="img/Rectangle15_1.png" class="specials-item-img" alt="Горящий тур на остров Крит">
                   <strong class="specials-item-header">
                     Горящий<br> тур на остров Крит
                   </strong>
@@ -104,11 +104,11 @@
                     Подробнее
                     <span class="specials-link-icon"></span>
                   </a>
-                </li>
-              </ul>
-              <ul class="specials-list-two">
-                <li class="specials-item">
-                  <img src="img/33 1.png" class="specials-item-imgbig" alt="Номера категории люкс">
+                </div>
+              </div>
+              <div class="specials-list-two">
+                <div class="specials-item">
+                  <img src="img/33_1.png" class="specials-item-imgbig" alt="Номера категории люкс">
                   <strong class="specials-item-headerbig">
                     Номера категории люкс
                   </strong>
@@ -119,9 +119,9 @@
                     Подробнее
                     <span class="specials-link-icon"></span>
                   </a>
-                </li>
-              </ul>
-            </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -669,12 +669,13 @@
         <section id="tour">
           <div class="container container-tour">
             <h2 class="text-header tour-header">Хочу тур</h2>
-            <form class="tour-form" action="https://jsonplaceholder.typicode.com/posts" autocomplete method="post" target="_blank">
+            <form class="tour-form" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="post" target="_blank">
               <ul class="form-list">
                 <li class="form-item">
                   <label for="sity">Город вылета</label>
-                  <select name="sity" class="form_sity" required>
-                    <option value="St_Petersburg">Санкт-Петербург</option>
+                  <select id="sity" name="sity" class="form_sity" required>
+                    <option value="" disabled>&nbsp;</option>
+                    <option value="St_Petersburg" selected>Санкт-Петербург</option>
                     <option value="Moscow">Москва</option>
                     <option value="Novosibirsk">Новосибирск</option>
                     <option value="Yekaterinburg">Екатеринбург</option>
@@ -693,20 +694,22 @@
                 </li>
                 <li class="form-item">
                   <label for="сountry">Страна</label>
-                  <select name="сountry" class="form_сountry" required>
-                    <option value="Australia">Австралия</option>
+                  <select id="сountry" name="сountry" class="form_сountry" required>
+                    <option value="" disabled>&nbsp;</option>
+                    <option value="Australia" selected>Австралия</option>
                     <option value="Azerbaijan">Азербайджан</option>
                     <option value="AlandIslands">Аландскиеострова</option>
                     <option value="Albania">Албания</option>
                   </select>
                 </li>
                 <li class="form-item form-item-data">
-                  <label for="сountry">Дата прибытия</label>
-                  <input type="date" name="birthday" class="input" required value="2022-07-17">
+                  <label for="formсountry">Дата прибытия</label>
+                  <input type="date" id="formсountry" name="birthday" class="input" required value="2022-07-17">
                 </li>
                 <li class="form-item form-item-nights">
                   <label for="nights">Ночей</label>
-                  <select name="nights" class="form_nights" required>
+                  <select id="nights" name="nights" class="form_nights" required>
+                    <option value="" disabled>&nbsp;</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -717,7 +720,8 @@
                 </li>
                 <li class="form-item form-item-tourists">
                   <label for="tourists">Туристы</label>
-                  <select name="tourists" class="form_tourists" required>
+                  <select id="tourists" name="tourists" class="form_tourists" required>
+                    <option value="" disabled>&nbsp;</option>
                     <option value="1">1</option>
                     <option value="2" selected>2</option>
                     <option value="3">3</option>
@@ -797,7 +801,7 @@
                 </div>
               </div>
               <div class="contact-right-big">
-                <img class="contact-right-img" src="img/Layer 2 1.png" alt="Lagoona">
+                <img class="contact-right-img" src="img/Layer21.png" alt="Lagoona">
               </div>
             </div>
           </div>
@@ -837,7 +841,7 @@
                 </a>
               </span>
               <span class="foter-logo">
-                <img class="foter-logo-img" src="img/Frame 11.svg" alt="">
+                <img class="foter-logo-img" src="img/Frame_11.svg" alt="">
               </span>
             </div>
             <div class="container-footer-right">
