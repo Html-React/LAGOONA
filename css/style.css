@@ -795,15 +795,17 @@ a {
 }
 
 .contact-right-small-text {
-  width: 229px;
+  width: 220px;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: var(--color-Black);
+  padding-left: 10px;
 }
 
 .contact-right-small {
   width: 229px;
+  padding-left: 5px;
 }
 
 
@@ -813,6 +815,7 @@ a {
   font-size: 16px;
   line-height: 150%;
   color: var(--color-YellowGold);
+  padding-left: 5px;
 }
 
 .contact-email-link {
@@ -820,6 +823,21 @@ a {
   font-size: 16px;
   line-height: 150%;
   color: var(--color-YellowGold);
+  padding-left: 5px;
+}
+
+.contact-email-link:hover {
+  color: var(--color-YellowGold);
+}
+
+.contact-email-link:focus {
+  color: var(--color-YellowGold);
+  outline: 1px solid var(--color-YellowGold);
+  padding: 5px;
+}
+
+.contact-email-link:active {
+  color: var(--color-Drab);
 }
 
 .cotact-text {
@@ -828,6 +846,7 @@ a {
   font-size: 16px;
   line-height: 150%;
   color:var(--color-SignalGrey);
+  padding-left: 5px;
 }
 
 .cotact-btn {
@@ -839,6 +858,7 @@ a {
   border: 1px solid var(--color-YellowGold);
   border-radius: 10px;
   background: var(--color-White);
+  color: var(--color-YellowGold);
 }
 
 /* Footer */
