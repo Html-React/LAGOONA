@@ -97,6 +97,7 @@ a {
   padding: 0;
   background-color: transparent;
   cursor: pointer;
+  transition: background 0.3s ease, color 0.2s linear;
 }
 
 .btn:focus {
@@ -151,6 +152,7 @@ a {
   color: var(--color-DimGray);
   text-decoration: none;
   padding: 10px;
+  transition: color 0.2s linear;
 }
 
 .header-private-content {
@@ -172,6 +174,7 @@ a {
   fill: var(--color-YellowGold);
   padding: 10px;
   text-decoration: none;
+  transition: color 0.2s linear;
 }
 
 .header-contacts-link:hover {
@@ -191,6 +194,7 @@ a {
   margin-right: 4px;
   width: 21px;
   height: 12px;
+  transition: fill 0.2s linear;
 }
 
 .header-private:focus {
@@ -251,6 +255,7 @@ a {
   padding: 5px;
   color: var(--color-DimGray);
   text-decoration: none;
+  transition: color 0.2s linear;
 }
 
 .nav-link:hover {
@@ -286,6 +291,7 @@ a {
   border: 1px solid var(--color-YellowGold);
   padding: 10px 20px;
   border-radius: 10px;
+  transition: background 0.3s ease, color 0.2s linear;
 }
 
 .heder-cell-link {
@@ -295,6 +301,7 @@ a {
   border: 1px solid var(--color-YellowGold);
   padding: 10px 20px;
   border-radius: 10px;
+  transition: background 0.3s ease, color 0.2s linear;
 }
 
 .heder-tour-link:hover, .heder-cell-link:hover{
@@ -377,6 +384,7 @@ a {
   line-height: 16px;
   text-decoration: none;
   color: #FFCC66;
+  transition: color 0.2s linear;
   }
 
 .specials-link-icon {
@@ -386,6 +394,7 @@ a {
   padding: 5px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  transition: margin-left 0.2s linear;
 }
 
 .specials-item-link:active {
@@ -490,6 +499,7 @@ a {
   line-height: 200%;
   color: var(--color-YellowGold);
   padding: 26px 0 0 45px;
+  transition: color 0.2s linear;
 }
 
 .services-link-icon {
@@ -499,6 +509,7 @@ a {
   padding: 5px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  transition: margin-left 0.2s linear;
 }
 
 .services-item-link:hover {
@@ -588,6 +599,7 @@ a {
 .accomodation-item {
   position: relative;
   max-width: 374px;
+  min-height: 440px;
   background: var(--color-White);
   border-radius: 15px;
 }
@@ -641,22 +653,31 @@ a {
 }
 
 .accomodation-img-big {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
+  background: url(../img/41.png) no-repeat;
+  background-size: cover;
+  min-width: 374px;
 }
 
 .accomodation-item-link {
   display: block;
-  position: absolute;
-  bottom: 27px;
-  left: 54px;
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
   color: var(--color-White);
+  padding-top: 373px;
+  padding-left: 54px;
 }
+
+
+.accomodation-item-link::before {
+  position: absolute;
+  content: '';
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .accomodation-link-icon {
   border: solid var(--color-White);
   border-width: 0 2px 2px 0;
@@ -931,8 +952,6 @@ a {
   right: 109px;
 }
 
-.container-footer-right {
-}
 .social-list {
   display: flex;
   flex-direction: column;
@@ -941,6 +960,7 @@ a {
 
 .social-img {
   fill:var(--color-SignalGrey);
+  transition: fill 0.2s linear;
 }
 
 .social-img:hover {
